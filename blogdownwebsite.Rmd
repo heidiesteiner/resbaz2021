@@ -1,16 +1,37 @@
 ---
-title: "Blogdown: Creating Websites with R Markdown"
+title: 'Blogdown: Creating Websites with R Markdown'
 author: "Heidi Steiner"
-date: "5/17/2021"
-output: ioslides_presentation
+date: "5/20/2021"
+output:
+  xaringan::moon_reader:
+    self_contained: true
 ---
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(message = F)
 ```
 
-## 
+## Hello! 
 
+#### Find me at...
+
+`r icons::fontawesome("twitter")` @hidyverse
+`r icons::fontawesome("github")` @heidiesteiner
+`r icons::fontawesome("link")` heidiesteiner.netlify.app
+`r icons::fontawesome("paper-plane")` heidiesteiner@email.arizona.edu
+
+
+
+#### About me.... 
+
+- PhD Student, Clinical Translational Sciences Program
+
+- I enjoy plants, biking and data analysis in the tidyverse 
+
+- Not an expert
+
+
+---
 ## Step 1 
 
 Make a repo on Github
@@ -18,15 +39,18 @@ Make a repo on Github
 NO `README` + NO `.gitignore` (yet!)
 
 ![](pics/Octocat.png) 
-
+---
 ## Step 2
 
 Make a new RStudio project via git clone
 
     *File > New Project > Version Control > Git*
+    
+```{r out.width="75%", echo = FALSE}
+knitr::include_graphics("pics/new-project.png")
+```
 
-![](pics/new-project.png){width=70%}
-
+---
 ## Step 3 
 
 1x per machine...
@@ -53,6 +77,7 @@ new_site(theme = "gcushen/hugo-academic",
 
 **NOTE:** Serve the site 
 
+---
 ## Step 4 
 
 Check your Hugo version and the version required by the theme you chose (academic = 0.55)
@@ -67,13 +92,17 @@ blogdown::install_hugo(force = T)
 
 Then **restart** R. 
 
+---
 ## Step 5
 
 Sign up to Netlify using your GitHub account.
 
-![](pics/netlify-github-signup.png){width=80%}
+```{r out.width="75%", echo = FALSE}
+knitr::include_graphics("pics/netlify-github-signup.png")
+```
 
 
+---
 ## Step 6
 
 ```{r eval = F}
@@ -98,11 +127,14 @@ Then open it and copy and paste:
 
 **NOTE:** make sure Hugo version matches yours! 
 
+---
 ## Step 7 
 
 Commit and push to GitHub!
 
-## Step 7
+![](pics/RStudio_screenshot_commit.png)
+---
+## Step 8
 
 Update .gitignore file
 ```{r eval = F}
@@ -114,16 +146,20 @@ public/
 .DS_Store # if a windows user, Thumbs.db instead
 ```
 
-## Step 8 
+---
+## Step 9 
 
 Link to GitHub in Netlify 
 
-![](pics/Screen Shot 2021-05-17 at 12.30.22 PM.png){width = 85%}
+![](pics/Screen Shot 2021-05-17 at 12.30.22 PM.png)
 
-## Step 9 
-
-Personalize 
-
+---
 ## Step 10 
 
-Update twitter bio with new personal website 🤩
+Personalize/add content to your heart's content! 
+
+#### JK
+
+This step is like 450 steps in one 
+
+
